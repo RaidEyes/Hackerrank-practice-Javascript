@@ -3,8 +3,7 @@ function sockMerchant(n, ar) {
   let answer = 0;
 
   function getValue(ar) {
-    const sortedArr = ar.sort((a, b) => a - b);
-    const setArr = new Set([...sortedArr]);
+    const setArr = new Set([...ar]);
     const uniqueType = [...setArr];
     return uniqueType;
   }
